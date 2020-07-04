@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="site.css">
+        <title>My first site</title>
+        <style type="text/css">
+            body {
+                margin-left: 10%;
+                padding: 10px;
+                font-family: 'Comic Sans MS', sans-serif;
+                font-size: medium;
+                line-height: 1.6em;
+            }
+            h1 {
+                font-size: 1.6em;
+                font-weight: 100;
+            }
+            div { 
+                margin-bottom: 1.3em;
+            } 
+            #photo {
+                float: left;
+                margin-right: 20px;
+            }
+            #header {
+                margin-bottom: 20px;
+                height: 120px;
+            }
+            table {
+                border: solid black;
+                border-collapse: collapse;
+            }
+            th, td {
+                border: solid black;
+                padding: 5px;
+            }
+            </style>
+    </head>
+    <body>
+<form action="nothing.php" method="POST">
+    <h1>Вакансия: Junior Frontend Developer</h1>
+    <div id="header">
+     <img id="photo" src="photo.jpg">
+        Имя: Елизавета<br>
+    <a href="https://github.com/elisms23/lufedl2form.git" title="Ссылка на репозиторий в Github">Ссылка на репозиторий в Github</a><br>
+    Опыт работы: нет
+    </div>
+    <div>
+        Дата собеседования: 
+        <input type="date" name="date">
+    </div>
+    <div>
+        Уровень английского: <br>
+            <input type="radio" id="плохо" name="english" value="плохо"><label for="плохо">Плохо</label>
+            <input type="radio" id="средне" name="english" value="средне"><label for="средне">Средне</label>
+            <input type="radio" id="хорошо" name="english" value="хорошо"><label for="хорошо">Хорошо</label>
+            <input type="radio" id="превосходно" name="english" value="превосходно"><label for="превосходно">Превосходно</label>
+    </div>
+    <div>
+        Ключевые навыки: 
+            <ul>
+                <li>HTML</li>
+                <li>CSS/LESS</li>
+                <li>JavaScript</li>
+                <li>...</li>
+            </ul>
+    </div>
+    <div>
+        <input type="text" name="skill" placeholder="введите навык..." value="">
+        <button>Добавить в список</button>
+    </div>
+    <div>
+        <p>Коммуникабельность: 
+        <select name="sociability">
+            <option value="Выберите значение">Выберите значение</option>
+            <option value="Высокая">Высокая</option>
+            <option value="Средняя">Средняя</option>
+            <option value="Сыч">Низкая</option>
+        </select>
+        </p>
+    </div>
+    <div>
+        Желаемая з/п: 
+        <input type="number" name="celery" min="10000" max="1000000">
+    </div>
+    <div>
+        <p>Подходит по критериям: </p>
+        <input type="checkbox" name="suitability" value="Знание английского">Знание английского
+        <input type="checkbox" name="suitability" value="Оклад">Оклад
+        <input type="checkbox" name="suitability" value="Навыки">Навыки
+        <input type="checkbox" name="suitability" value="Сразу видно, что свой человек">Сразу видно, что свой человек
+    </div>
+    <div>
+        <p>Образование, курсы и т.п.</p>
+        <table>
+            <tr>
+                <th>#</th>
+                <th>Сроки обучения</th>
+                <th>Наименование учебного заведения, курсов...</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>09/2004-06/2010</td>
+                <td>Тюменский государственный медицинский университет</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>09/2005-12/2009</td>
+                <td>Тюменский государственный университет</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>06/2020-09/2020</td>
+                <td>LevelUp Junior Frontend Developer</td>
+            </tr>
+        </table>
+    </div>
+    <div><p><input type="submit" value="Отправить"></p></div>
+</form>
+    </body>
+    </html>
