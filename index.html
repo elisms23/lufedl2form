@@ -4,48 +4,19 @@
         <meta charset="UTF-8">
         <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="site.css">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
         <title>My first site</title>
-        <style type="text/css">
-            body {
-                margin-left: 10%;
-                padding: 10px;
-                font-family: 'Comic Sans MS', sans-serif;
-                font-size: medium;
-                line-height: 1.6em;
-            }
-            h1 {
-                font-size: 1.6em;
-                font-weight: 100;
-            }
-            div { 
-                margin-bottom: 1.3em;
-            } 
-            #photo {
-                float: left;
-                margin-right: 20px;
-            }
-            #header {
-                margin-bottom: 20px;
-                height: 120px;
-            }
-            table {
-                border: solid black;
-                border-collapse: collapse;
-            }
-            th, td {
-                border: solid black;
-                padding: 5px;
-            }
-            </style>
     </head>
     <body>
 <form action="nothing.php" method="POST">
     <h1>Вакансия: Junior Frontend Developer</h1>
     <div id="header">
-     <img id="photo" src="photo.jpg">
-        Имя: Елизавета<br>
-    <a href="https://github.com/elisms23/lufedl2form.git" title="Ссылка на репозиторий в Github">Ссылка на репозиторий в Github</a><br>
+     <div id="box" style="display: inline-block"><img id="photo" src="photo.jpg"></div>
+        <div id="headertext" style="display: inline-block">Имя: Елизавета<br>
+    <a href="https://github.com/elisms23/lufedl2form.git" target="_blank" title="Ссылка на репозиторий в Github">Ссылка на репозиторий в Github</a><br>
     Опыт работы: нет
+    </div>
     </div>
     <div>
         Дата собеседования: 
@@ -53,10 +24,10 @@
     </div>
     <div>
         Уровень английского: <br>
-            <input type="radio" id="плохо" name="english" value="плохо"><label for="плохо">Плохо</label>
-            <input type="radio" id="средне" name="english" value="средне"><label for="средне">Средне</label>
-            <input type="radio" id="хорошо" name="english" value="хорошо"><label for="хорошо">Хорошо</label>
-            <input type="radio" id="превосходно" name="english" value="превосходно"><label for="превосходно">Превосходно</label>
+            <input type="radio" id="bad" name="english" value="плохо"><label for="плохо">Плохо</label>
+            <input type="radio" id="medium" name="english" value="средне"><label for="средне">Средне</label>
+            <input type="radio" id="good" name="english" value="хорошо"><label for="хорошо">Хорошо</label>
+            <input type="radio" id="stunning" name="english" value="превосходно"><label for="превосходно">Превосходно</label>
     </div>
     <div>
         Ключевые навыки: 
@@ -64,20 +35,19 @@
                 <li>HTML</li>
                 <li>CSS/LESS</li>
                 <li>JavaScript</li>
-                <li>...</li>
             </ul>
     </div>
     <div>
         <input type="text" name="skill" placeholder="введите навык..." value="">
-        <button>Добавить в список</button>
+        <button class="a-button">Добавить в список</button>
     </div>
     <div>
         <p>Коммуникабельность: 
         <select name="sociability">
-            <option value="Выберите значение">Выберите значение</option>
+            <option value="Выберите значение" disabled selected>Выберите значение</option>
             <option value="Высокая">Высокая</option>
             <option value="Средняя">Средняя</option>
-            <option value="Сыч">Низкая</option>
+            <option value="Низкая">Низкая</option>
         </select>
         </p>
     </div>
@@ -95,11 +65,11 @@
     <div>
         <p>Образование, курсы и т.п.</p>
         <table>
-            <tr>
+            <thead>
                 <th>#</th>
                 <th>Сроки обучения</th>
                 <th>Наименование учебного заведения, курсов...</th>
-            </tr>
+            </thead>
             <tr>
                 <td>1</td>
                 <td>09/2004-06/2010</td>
@@ -117,7 +87,7 @@
             </tr>
         </table>
     </div>
-    <div><p><input type="submit" value="Отправить"></p></div>
+      <div><p><input type="submit" value="Отправить" class="a-button b-button"></p></div>
 </form>
     </body>
     </html>

@@ -1,0 +1,77 @@
+body {
+    padding: 0 20%; 
+    font-family: 'PT Sans', sans-serif;
+    font-size: medium;
+    line-height: 1.6em;
+    background: linear-gradient(to bottom right, rgb(198, 220, 241), rgb(205, 131, 240));
+}
+form {
+    background-color: rgb(242, 246, 250);
+    margin: auto; 
+    padding: 2% 10%;
+    border: thin solid rgb(28, 12, 58);
+}
+h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.6em;
+    font-weight: 100;
+    color: rgb(27, 27, 95);
+}
+div { 
+    margin-bottom: 1.3em;
+} 
+#box {
+    position: absolute;
+    transition: transform 2s;
+    -webkit-transition: -webkit-transform 2s;
+    -moz-transition: -moz-transform 2s;
+    -o-transition: -o-transform 2s;
+}
+#box:hover {
+    transform: rotate(720deg);
+    -webkit-transform: rotate(720deg);
+    -moz-transform: rotate(720deg);
+    -o-transform: rotate(720deg);
+}
+#header {
+    margin-bottom: 20px;
+    height: 120px;
+}
+#headertext {
+    vertical-align: top;
+    margin-left: 150px;
+}
+.a-button {
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    background: #4676d7;
+    color: aliceblue;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+.b-button {
+    padding: 6px 10px;
+    font-size: 1.1em;
+    text-decoration: underline;
+}
+.b-button:hover {
+    background: rgb(155, 84, 155);
+    text-decoration: underline;
+}
+.b-button:focus {
+    color: rgb(177, 226, 179);
+    background: rgb(228, 14, 14);
+    text-decoration: underline;
+}
+table {
+    border: solid black;
+    border-collapse: collapse;
+}
+th, td {
+    border: solid black;
+    padding: 5px;
+}
+thead:hover, tr:hover {
+    background: rgb(245, 171, 245);
+}
